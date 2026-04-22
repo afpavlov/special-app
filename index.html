@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <link rel="stylesheet" href="source/styles/bgvideo.css"> <!--подключаем видеофайл(с.54, 3:19:23)-->
+
+    <link rel="icon" href="source/files/hit.png"> <!--в тег link вставляем путь к иконке страницы(с.54, 3:18:33)-->
+    <title>HiT</title>
+</head>
+<body>
+    <!-- <p>text</p> -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark"> <!--изменяем фон bg-light на bg-dark через bootstrap(1:26:10)-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="source/files/logo.webp" alt="..."></a> <!--вместо надписи Navbar добавим логотип(с.9, 1:32:13)--> <!--ссылка на базовый(основной) файл указывается в виде слэша "\"(с.60, 3:30:26)-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/">Home</a> <!--ссылка активна, когда открыт index.html(с.9, 1:31:24)--> <!--ссылка на базовый(основной) файл указывается в виде слэша "\"(с.60, 3:30:26)-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="pricing.html">Pricing</a> <!--ссылка не активна, когда открыт index.html(с.9, 1:31:24)-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="pricing.html">Contacts</a> <!--добавим ссылку Contacts(с.44, 2:54:16)-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="pricing.html">
+                        <img style="width: 25px; margin-inline: 1em;" src="source/files/yt.webp" alt="..."> <!--переносим сюда картинку из футера(с.45, 2:55:35)-->
+                      </a> 
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="pricing.html">
+                        <img style="width: 25px; margin-inline: 1em;" src="source/files/tg.webp" alt="..."> <!--уменьшим размер картинок у ютуба и у телеграмма(с.45, 2:55:35)-->
+                      </a> 
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="bgvideo"> <!--поместим видео(50) в контейнер с классом bgvideo(с.55, 3:22:10)-->
+            <video src="source/files/Motion_Graphic_3840x2160.mp4" type="video/mp4" autoplay muted loop></video> <!--добавим тег video с атрибутами: autoplay, muted и loop(с.55, 3:20:37)-->
+            <div class="effect"></div> <!--запишем пустой тег div c классом effect, чтобы затемнить видео в сss(c.59, 3:27:31)-->
+            <div class="video-text"> <!--добавим тег div c классом video-text(с.58, 3:25:43)-->
+                <h1>Future s here</h1> <!--в тег <h1> поместим надпись "Future s here"(с.58, 3:25:43)-->
+            </div>
+        </div>
+        
+        <div class="container-fluid mt-4"> <!--сделаем отступ сверху. Пишем mt-4 т.е. margin сверху(top)равен 4em(c.21, 1:54:43)-->
+            <div class="row"> <!--создаем div c классом "row"(1:51:22, с.20)-->
+                <div class="col-lg-1"> <!--создадим div c классом "col-lg-1"(1доля) для бокового отступа слева(1:51:45, с.20)-->
+
+                </div>
+                <div class="col-lg-8 col-md-12"> <!--создадим div с классом col-lg-8(8долей) и в него поместим div(row) c картaми товара(39-70)(с.20)-->
+                    <div class="row"> <!-- заново cоздадим div c классом row(с.32, 2:22:50)-->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true"> <!--вставляем код карусели из бутстрапа(с.33, 2:24:16)-->
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> <!--добавим кнопки, таким образом увеличиваем количества картинок(с.38, 2:38:33)-->
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+
+                            </div>
+                            <div class="carousel-inner"> <!--в этом контейнере находятся div-ы со слайдами(с.34, 2:25:52)-->
+                              <div class="carousel-item active">
+                                <div class="d-block w-100"> <!--пишем тег div c классом d-block w-100(с.35, 2:30:03)-->
+                                    <div class="row"> <!--добавим тег div c классом row, чтобы воспользоваться бутстраповской сеткой для размещения в ней двух div-ов(c.35, 2:30:14)-->
+                                        <div class="col-lg-6 col-md-6"> <!--пишем div для картинки c классом col-lg-6 col-md-6 т.е. берем половину из 12 долей(с.35, 2:30:14)-->
+                                            <img src="source/images/1.jpg" class="w-100" alt="..."> <!--добавим изображение в тег img-->
+                                        </div>
+                                        <div class="div col-lg-6 col-md-6 slide-text"> <!--пишем div для текста c классом col-lg-6 col-md-6 т.е. берем вторую половину из 12 долей(с.35, 2:30:14)--><!--пишем тег р с тексом(с.36, 2:32:44)-->
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates, soluta tenetur debitis sit sint, numquam eius nobis odit explicabo?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="d-block w-100"> <!--пишем тег div c классом d-block w-100. Теперь нижние контейнера будут наследовать эти классы(с.35, 2:30:03)-->
+                                    <div class="row"> <!--добавим тег div c классом row, чтобы воспользоваться бутстраповской сеткой для размещения в ней двух div-ов(c.35, 2:30:14)-->
+                                        <div class="col-lg-6 col-md-6"> <!--этот контейнер займет половину div-a c классом row и здесь разместим картинку(с.36, 2:31:03)-->
+                                            <img src="source/images/VR.jpg" class="w-100" alt="...">
+                                        </div>
+                                        <div class="div col-lg-6 col-md-6 slide-text"> <!--этот контейнер тоже займет половину div-a c классом row и здесь разместим текст(с.36, 2:32:44)-->
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates, numquam eius nobis odit explicabo?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="d-block w-100">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <img src="source/images/gpc.jpg" class="w-100" alt="...">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 slide-text"> <!--удалим slide-text из тега <p> и добавим его в div c классом col-lg-6 col-md-6(с.37, 2:35:33)-->
+                                            <p>Lorem ipsum dolor sit amet. Quae voluptates, impedit quasi optio repudiandae rem, soluta tenetur debitis sit sint, numquam eius nobis odit explicabo?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="d-block w-100"> <!--пишем тег div c классом d-block w-100. Теперь нижние контейнера будут наследовать эти классы(с.35, 2:30:03)-->
+                                    <div class="row"> <!--добавим тег div c классом row, чтобы воспользоваться бутстраповской сеткой для размещения в ней двух div-ов(c.35, 2:30:14)-->
+                                        <div class="col-lg-6 col-md-6"> <!--этот контейнер займет половину div-a c классом row и здесь разместим картинку(с.36, 2:31:03)-->
+                                            <img src="source/images/gpu.jpg" class="w-100" alt="...">
+                                        </div>
+                                        <div class="div col-lg-6 col-md-6 slide-text"> <!--этот контейнер тоже займет половину div-a c классом row и здесь разместим текст(с.36, 2:32:44)-->
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates, numquam eius nobis odit explicabo?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="d-block w-100"> <!--пишем тег div c классом d-block w-100. Теперь нижние контейнера будут наследовать эти классы(с.35, 2:30:03)-->
+                                    <div class="row"> <!--добавим тег div c классом row, чтобы воспользоваться бутстраповской сеткой для размещения в ней двух div-ов(c.35, 2:30:14)-->
+                                        <div class="col-lg-6 col-md-6"> <!--этот контейнер займет половину div-a c классом row и здесь разместим картинку(с.36, 2:31:03)-->
+                                            <img src="source/images/gpu.jpg" class="w-100" alt="...">
+                                        </div>
+                                        <div class="div col-lg-6 col-md-6 slide-text"> <!--этот контейнер тоже займет половину div-a c классом row и здесь разместим текст(с.36, 2:32:44)-->
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates, numquam eius nobis odit explicabo?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="d-block w-100"> <!--пишем тег div c классом d-block w-100. Теперь нижние контейнера будут наследовать эти классы(с.35, 2:30:03)-->
+                                    <div class="row"> <!--добавим тег div c классом row, чтобы воспользоваться бутстраповской сеткой для размещения в ней двух div-ов(c.35, 2:30:14)-->
+                                        <div class="col-lg-6 col-md-6"> <!--этот контейнер займет половину div-a c классом row и здесь разместим картинку(с.36, 2:31:03)-->
+                                            <img src="source/images/gpu.jpg" class="w-100" alt="...">
+                                        </div>
+                                        <div class="div col-lg-6 col-md-6 slide-text"> <!--этот контейнер тоже займет половину div-a c классом row и здесь разместим текст(с.36, 2:32:44)-->
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates, numquam eius nobis odit explicabo?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="d-block w-100"> <!--пишем тег div c классом d-block w-100. Теперь нижние контейнера будут наследовать эти классы(с.35, 2:30:03)-->
+                                    <div class="row"> <!--добавим тег div c классом row, чтобы воспользоваться бутстраповской сеткой для размещения в ней двух div-ов(c.35, 2:30:14)-->
+                                        <div class="col-lg-6 col-md-6"> <!--этот контейнер займет половину div-a c классом row и здесь разместим картинку(с.36, 2:31:03)-->
+                                            <img src="source/images/gpu.jpg" class="w-100" alt="...">
+                                        </div>
+                                        <div class="div col-lg-6 col-md-6 slide-text"> <!--этот контейнер тоже займет половину div-a c классом row и здесь разместим текст(с.36, 2:32:44)-->
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates, numquam eius nobis odit explicabo?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 text-center mt-4"> <!--сделаем контейнер, который будет занимать всю ширину div-a с классом row(52)(c.46, 2:59:05)-->
+                            <button type="button" class="btn btn-outline-primary btn-lg my-4">See More</button> <!--вставляем код кнопки из бутстрапа(с.51, 3:11:16)-->
+                        </div> <!--добавим к кнопке класс btn-lg, чтобы увеличить ее размер и класс my-4, чтобы сместить кнопку вниз(с.52, 3:11:47,3:12:25) -->
+                        
+                        <div class="col-lg-12 col-md-12 text-center mt-4"> <!--сделаем контейнер, который будет занимать всю ширину div-a с классом row(52)(c.46, 2:59:05)-->
+                            <a href="pricing.html"><button type="button" class="btn btn-outline-primary btn-lg my-4">See More</button></a> <!--вставляем код кнопки из бутстрапа(с.51, 3:11:16)-->
+                        </div> <!--добавим к кнопке класс btn-lg, чтобы увеличить ее размер и класс my-4, чтобы сместить кнопку вниз(с.52, 3:11:47,3:12:25) -->
+
+                        <div class="col-lg-12 col-md-12 text-center mt-4"> <!--сделаем контейнер, который будет занимать всю ширину div-a с классом row(52)(c.46, 2:59:05)-->
+                            <p>Can we help you?</p> <!--добавим класс mt-4, для отступа от карусели(53-159)(с.47, 3:03:03)-->
+                        </div>
+                        <div class="col-lg-12 col-md-12 text-center"> <!--добавим класс text-center, чтобы отцентровать надпись(162) и картинку телефона(165)(с.47, 3:02:48)-->
+                            <img class="call-anim" style="width: 40px;" src="source/files/tel_2.png" alt="..."> <!--разместим изображение телефона(с.47, 3:01:43)-->
+                        </div> <!--в тег img добавим для анимации картинки класс call-anim(с.49, 3:05:35)-->
+                    </div>
+                </div> <!--Чтобы боковая панель на планшетах(md)была внизу пишем col-md-12(c.21, 1:52:56) -->
+                
+                <div class="col-lg-3 col-md-12"> <!--div c классом col-lg-3(3доли)(с.21, 1:52:21)-->
+                    <div class="row px-2"> <!--добавим div c классом "row"(с.25, 2:04:17)--> <!--добавим класс px-2 для отступов по горизонтали(с.27)-->
+                        <div class="col-lg-12 sidebar my-4"> <!--указываем тег div с классом col-lg-12. В нем пишем тег <p> c текстом и со
+                            ссылкой <a>(c.25, 2:06:02)-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda sed harum, exercitationem aperiam ratione expedita nostrum reiciendis, similique animi praesentium ut. Vel, amet distinctio. Sed! <a href="#">Learn more>>></a></p>
+                        </div>
+                        <div class="col-lg-12 sidebar my-4"> <!--добавим класс sidebar, чтобы в стилях изменить цвет текста(c.26)-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda sed harum, exercitationem aperiam ratione expedita nostrum reiciendis, similique animi praesentium ut. Vel, amet distinctio. Sed! <a href="#">Learn more>>></a></p>
+                        </div>
+                        <div class="col-lg-12 sidebar my-4"> <!--добавим класс my-4, чтобы сделать отступ(margin)через css(c.27, 2:09:04)-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda sed harum, exercitationem aperiam ratione expedita nostrum reiciendis, similique animi praesentium ut. Vel, amet distinctio. <a href="#">Learn more>>></a></p>
+                        </div>
+                        <div class="col-lg-12 sidebar my-4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda sed harum, exercitationem aperiam ratione expedita nostrum reiciendis, similique animi praesentium ut. Sed! <a href="#">Learn more>>></a></p>
+                        </div>
+                        <div class="col-lg-12 sidebar my-4">
+                            <p>Voluptates assumenda sed harum, exercitationem aperiam ratione expedita nostrum reiciendis, similique animi praesentium ut. Vel, amet distinctio. Sed! <a href="#">Learn more>>></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-4"> <!--разобъем футер на три равных блока(176,179,182)(с.40, 2:43:44)-->
+        <div class="container-fluid">
+            <div class="row"> <!--пишем col-lg-4, чтобы разбить футер на 3(по 4доли) части и col-md-12 для планшетов и телефонов(с.40, 41, 2:44:26)-->
+                <div class="col-lg-4 col-md-12 footer-text text-center"> <!--встроенный класс text-center отцентрует текст внутри тега <р> (c.42, 2:47:13)-->
+                    <p>All Rights Reserved 2022</p> <!--первый блок: права на сайте защищены -->
+                </div>
+                <div class="col-lg-4 col-md-12 footer-text text-center"> <!--footer-text это класс, чтобы придать цвет шрифту в css стилях(с.41, 2:45:42). text-center - чтобы центрировать текст в теге <р>(c.42, 2:47:13)-->
+                    <p>Contact<br>Job<br>Our Team</p> <!--второй блок: контактная информация -->
+                </div>
+                <div class="col-lg-4 col-md-12 media-links"> <!--третий блок: ссылки на социальные сети--><!--класс media-links нужен для выравнивания картинок по центру(с.43, 2:51:20)-->
+                    <img style="width: 40px; margin-inline: 1em;" src="source/files/yt.webp" alt="..."> <!--изображение для социальных сетей(с.42, 2:48:43)-->
+                    <img style="width: 40px; margin-inline: 1em;" src="source/files/tg.webp" alt="..."> <!--в style укажем ширину изображений(с.43, 2:49:47) и добавим margin-inline: 1em;, 
+                    чтобы они не прилипали друг к другу(с.43, 2:52:11)-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap'); /*ссылка на 
+получение шрифта Michroma через googleapis.com(c.27,29, 2:10:38*/
+
+body{
+    font-family: Michroma, serif; /*применим к тегу body шрифт Michroma(с.30, 2:14:20)*/
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+p{ /*зададим базовый цвет для всех тегов <p>(c.47, 2:59:34)*/
+    color: aquamarine;
+}
+
+.nav-link{ /*изменяем цвет ссылки .nav-link
+     без active т.е.ссылкм не активна(1:27:06, с.7*/
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active{ /*изменяем цвет ссылки .nav-link.active
+    на серый. Здесь ссылка активна(с.8)*/
+    color: rgb(151, 155, 153);
+}
+
+.navbar-brand img{ /*указываем ширину логотипа(с.9, 1:33:36*/
+    width: 40px;
+}
+
+.navbar-toggler{ /*изменяем цвет бургера(кнопки) на более светлый(с.10, 1:34:38*/
+    background-color: rgb(151, 155, 153);
+} 
+
+.sidebar{ /*изменим цвет текста в боковой панели(с.25, 2:06:53*/
+    color: aquamarine;
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%); /*изменим фон у боковой панели(с.26, 2:08:19)*/
+}
+
+.card{
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%); /*изменим фон у карт товаров(с.30, 2:15:53)*/
+    color: aquamarine; /*изменяем цвет шрифта у карт товаров через класс card и тег <p> его подхватит,
+    так как он его наследует(с.30)*/
+}
+
+.card a{ /*убирем подчеркивание у картинки(42) карт товаров, в названии(44) карт и
+    в описании карт товаров(45)(с.31, 2:18:23)*/
+    text-decoration: none;
+    color: aquamarine; /*изменим цвет шрифта у ссылок(с.31)*/
+}
+
+.slide-text, /*класс .slide-text изменяет цвет шрифта описания карт(с.37, 2:34:24)*/
+.footer-text{ /*класс .footer-text изменяет цвет шрифта в футере(с.41, 2:45:42)*/
+    color: aquamarine; /*изменим цвет текста описания(2:34:24, с.37)*/
+    margin: auto auto; /*зададим центральное положение текста в теге <p>(c.37, 2:37:25)*/
+}
+
+footer, /*сделаем для футера обратный градиент, чтобы отделить от секции(section)(c.42, 2:47:47*/
+.btn-outline-primary{ /*сделаем для кнопки обратный градиент(с.52, 3:12:25)*/
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%); /*изменим фон у боковой панели(с.26, 2:08:19)*/
+}
+
+.media-links{ /*отцентруем изображение социальных сетей в футере(с.43, 2:49:47*/
+    display: flex; /*так как div(182)блочный сделаем из него display: flex;(с.43, 2:51:20)*/
+    justify-content: center;/*выровняем изображение по центру по горизонтали*/
+    align-items: center; /*выровняем изображение по центру по вертикали*/
+}
+
+.call-anim{ /*обратимся к картинке телефона в файле index.html и вставляем код 
+    из webcode.tools(c.49, 3:06:42*/
+    animation: myAnim 2s ease 0s infinite normal forwards; /*2 секунды идет анимация(с.49, 3:06:42)*/
+} /*в строке 67 указано имя myAnim(с.50, 3:07:03)*/
+
+@keyframes myAnim{
+    0%,
+    100%{
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15%{ /*15% происходит трансформация по коду в строке 78, 30% по 
+        коду в строке 82 и т.д.(с.50, 3:07:03)*/
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30%{
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45%{
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60%{
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75%{
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@media(max-width: 755px){ /*медиа запрос: если ширина меньше 755px, то
+    кнопки не отображать(с.39, 2:41:29)*/
+    .carousel-indicators{
+        display: none;
+    }
+}
